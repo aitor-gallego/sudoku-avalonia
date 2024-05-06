@@ -10,18 +10,50 @@
     <list default="true" id="4bf1da74-6a8c-4fc1-878c-bbdea1716564" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.sudoku-avalonia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sudoku-avalonia/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/MainWindow.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/MainWindow.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/bin/Debug/net8.0/sudoku-avalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/bin/Debug/net8.0/sudoku-avalonia.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/bin/Debug/net8.0/sudoku-avalonia.exe" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/bin/Debug/net8.0/sudoku-avalonia.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/bin/Debug/net8.0/sudoku-avalonia.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/bin/Debug/net8.0/sudoku-avalonia.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/original.dll" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/original.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/original.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/original.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/original.ref.dll" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/original.ref.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/resources" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/ref/sudoku-avalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/ref/sudoku-avalonia.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/refint/sudoku-avalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/refint/sudoku-avalonia.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.sourcelink.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "assignee": "aitor-gallego"
+    }
+  ],
+  "lastFilter": {
+    "assignee": "aitor-gallego"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:aitor-gallego/sudoku-avalonia.git",
+    "accountId": "1bb278c4-7c1d-4d3d-bdd7-0a77dfcf1c6c"
+  }
+}]]></component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5
@@ -33,6 +65,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Project.sudoku-avalonia.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -79,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715013761239</updated>
-      <workItem from="1715013761666" duration="416000" />
+      <workItem from="1715013761666" duration="7114000" />
     </task>
     <servers />
   </component>

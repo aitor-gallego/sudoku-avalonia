@@ -13,12 +13,12 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = sudoku-avalonia
-build_property.ProjectDir = C:\Users\aitor\source\repos\sudoku-avalonia\sudoku-avalonia\
+build_property.ProjectDir = C:\Users\aitor 1\source\repos\sudoku-avalonia\sudoku-avalonia\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/aitor/source/repos/sudoku-avalonia/sudoku-avalonia/App.axaml]
+[C:/Users/aitor 1/source/repos/sudoku-avalonia/sudoku-avalonia/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/aitor/source/repos/sudoku-avalonia/sudoku-avalonia/MainWindow.axaml]
+[C:/Users/aitor 1/source/repos/sudoku-avalonia/sudoku-avalonia/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using Avalonia.Controls;
 using Avalonia.VisualTree;
@@ -26,33 +27,46 @@ public partial class MainWindow : Window
         IntiSudoku();
     }
 
+    //sudoku generator
     private void IntiSudoku()
     {
-        List<int> randomizeSudoku = [];
+        List<int> randomSudoku = [];
 
         foreach (var t in _sudoku)
         {
             Random rnd = new();
             if (rnd.Next(0, 3) == 0) 
-                randomizeSudoku.Add(t);
+                randomSudoku.Add(t);
             else
-                randomizeSudoku.Add(0);
+                randomSudoku.Add(0);
         }
         
         var i = 0;
         foreach (var tBox in Main.GetVisualDescendants().OfType<TextBox>())
         {
-            if (randomizeSudoku[i] == 0)
+            if (randomSudoku[i] == 0)
                 tBox.Text = "";
             else
             {
-                tBox.Text = randomizeSudoku[i].ToString();
+                tBox.Text = randomSudoku[i].ToString();
                 tBox.IsReadOnly = true;
                 tBox.Focusable = false;
                 tBox.Foreground = Brushes.DarkSlateBlue;
             }
             i++;
         }
+    }
+
+     //input control
+    private void TextBox_OnTextChanged(object? sender, TextChangedEventArgs e)
+    {
+        if (sender is not TextBox tb) return;
+        if (!int.TryParse(tb.Text, out var nVal) || nVal == 0)
+            tb.Text = "";
+    }
+
+    private void MenuItem_OnClick(object? sender, RoutedEventArgs e)
+    {
         
     }
 }

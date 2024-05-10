@@ -26,7 +26,6 @@
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +116,7 @@
       <workItem from="1715161785055" duration="5528000" />
       <workItem from="1715235919247" duration="6990000" />
       <workItem from="1715322651922" duration="5749000" />
+      <workItem from="1715328654526" duration="4173000" />
     </task>
     <servers />
   </component>

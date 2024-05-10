@@ -13,17 +13,17 @@
         <Window.Styles>
                 <Style Selector="TextBox">
                         <Setter Property="Background" Value="Transparent"></Setter>
-                        <Setter Property="Margin" Value="20"/>
                         <Setter Property="BorderThickness" Value="0"/>
                         <Setter Property="FontSize" Value="20"/>
                         <Setter Property="Foreground" Value="DarkGray"/>
                         <Setter Property="TextAlignment" Value="Center"/>
                         <Setter Property="HorizontalAlignment" Value="Center"/>
                         <Setter Property="VerticalAlignment" Value="Center"/>
-                        <Setter Property="Width" Value="40"/>
+                        <Setter Property="MinWidth" Value="40"/>
                         <Setter Property="Height" Value="40"/>
-                        <Setter Property="Watermark" Value="?"/>
+                        <Setter Property="Watermark" Value=""/>
                         <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="MaxLength" Value="1"></Setter>
                 </Style>
                 
                 <Style Selector="TextBox:focus /template/ Border#PART_BorderElement">
@@ -37,9 +37,9 @@
                 </Style>
         </Window.Styles>
         
-        <Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*,*" >
-                <Border Name="G00" Grid.Column="0" Grid.Row="0" BorderBrush="Black" BorderThickness="1">
-                        <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*">
+        <Grid Name="Main" RowDefinitions="*,*,*" ColumnDefinitions="*,*,*" >
+                <Border Grid.Column="0" Grid.Row="0" BorderBrush="Black" BorderThickness="1" ZIndex="1">
+                        <Grid Name="G00" ColumnDefinitions="*,*,*" RowDefinitions="*,*,*">
                                 <Border Name="C00" Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
                                         <TextBox/>
                                 </Border>
@@ -69,108 +69,252 @@
                                 </Border>
                         </Grid>
                 </Border>
-                <Border Grid.Column="1" Grid.Row="0" BorderBrush="Black" BorderThickness="1">
+                <Border Grid.Column="1" Grid.Row="0" BorderBrush="Black" BorderThickness="1" ZIndex="1">
                         <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*">
-                                <Border Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>     
+                                <Border Name="C09" Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C10" Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C11" Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C12" Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C13" Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C14" Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C15" Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C16" Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C17" Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>   
                         </Grid>
                 </Border>
-                <Border Grid.Column="2" Grid.Row="0" BorderBrush="Black" BorderThickness="1">
+                <Border Grid.Column="2" Grid.Row="0" BorderBrush="Black" BorderThickness="1" ZIndex="1">
                         <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*">
-                                <Border Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>     
+                                <Border Name="C18" Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C19" Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C20" Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C21" Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C22" Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C23" Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C24" Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C25" Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C26" Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border> 
                         </Grid>
                 </Border>
-                <Border Grid.Column="0" Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                <Border Grid.Column="0" Grid.Row="1" BorderBrush="Black" BorderThickness="1" ZIndex="1">
                         <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*">
-                                <Border Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>     
+                                <Border Name="C27" Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C28" Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C29" Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C30" Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C31" Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C32" Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C33" Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C34" Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C35" Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>  
                         </Grid>
                 </Border>
-                <Border Grid.Column="1" Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                <Border Grid.Column="1" Grid.Row="1" BorderBrush="Black" BorderThickness="1" ZIndex="1">
                         <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*">
-                                <Border Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>     
+                                <Border Name="C36" Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C37" Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C38" Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C39" Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C40" Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C41" Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C42" Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C43" Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C44" Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>  
                         </Grid>
                 </Border>
-                <Border Grid.Column="2" Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                <Border Grid.Column="2" Grid.Row="1" BorderBrush="Black" BorderThickness="1" ZIndex="1">
                         <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*">
-                                <Border Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>     
+                                <Border Name="C45" Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C46" Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C47" Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C48" Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C49" Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C50" Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C51" Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C52" Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C53" Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>   
                         </Grid>
                 </Border>
-                <Border Grid.Column="0" Grid.Row="2" BorderBrush="Black" BorderThickness="1">
+                <Border Grid.Column="0" Grid.Row="2" BorderBrush="Black" BorderThickness="1" ZIndex="1">
                         <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*">
-                                <Border Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>     
+                                <Border Name="C54" Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C55" Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C56" Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C57" Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C58" Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C59" Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C60" Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C61" Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C62" Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border> 
                         </Grid>
                 </Border>
-                <Border Grid.Column="1" Grid.Row="2" BorderBrush="Black" BorderThickness="1">
+                <Border Grid.Column="1" Grid.Row="2" BorderBrush="Black" BorderThickness="1" ZIndex="1">
                         <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*">
-                                <Border Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>     
+                                <Border Name="C63" Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C64" Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C65" Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C66" Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C67" Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C68" Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C69" Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C70" Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C71" Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>      
                         </Grid>
                 </Border>
-                <Border Grid.Column="2" Grid.Row="2" BorderBrush="Black" BorderThickness="1">
+                <Border Grid.Column="2" Grid.Row="2" BorderBrush="Black" BorderThickness="1" ZIndex="1">
                         <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*">
-                                <Border Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>
-                                <Border Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1"/>     
+                                <Border Name="C72" Grid.Column="0" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C73" Grid.Column="1" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C74" Grid.Column="2" Grid.Row="0" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C75" Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C76" Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C77" Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C78" Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C79" Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>
+                                <Border Name="C80" Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="DarkGray" BorderThickness="1">
+                                        <TextBox/>
+                                </Border>     
                         </Grid>
                 </Border>
         </Grid>

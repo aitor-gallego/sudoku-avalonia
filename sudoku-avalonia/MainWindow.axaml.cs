@@ -147,21 +147,24 @@ public partial class MainWindow : Window
         var rec = 0;
         foreach (var tBox in Main.GetVisualDescendants().OfType<TextBox>())
         {
-            if (tBox.Text != _sudoku[rec].ToString())
+            if (tBox.Text != _sudoku[rec].ToString() && tBox.Text != "")
             {
                 MessageBrd.Background = Brushes.DarkRed;
                 MessageLbl.Content = "SUDOKU INCORRECTO";
                 tBox.Foreground = Brushes.DarkRed;
                 return;
             }
-            else
+            if (tBox.Text == "")
             {
-                if (!tBox.IsReadOnly)
-                {
-                    tBox.Foreground = Brushes.Green;
-                    tBox.Focusable = false;
-                    tBox.IsReadOnly = true;
-                }
+                MessageBrd.Background = Brushes.DarkMagenta;
+                MessageLbl.Content = "SUDOKU INCOMPLETO";
+                return;  
+            }
+            if (!tBox.IsReadOnly)
+            {
+                tBox.Foreground = Brushes.Green;
+                tBox.Focusable = false;
+                tBox.IsReadOnly = true;
             }
             rec++;
         }

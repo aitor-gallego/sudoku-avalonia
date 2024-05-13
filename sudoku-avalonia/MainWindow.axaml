@@ -11,6 +11,7 @@
         RequestedThemeVariant="Light">
         
         <Window.Styles>
+                <!--text box-->
                 <Style Selector="TextBox">
                         <Setter Property="Background" Value="Transparent"></Setter>
                         <Setter Property="BorderThickness" Value="0"/>
@@ -24,6 +25,7 @@
                         <Setter Property="Watermark" Value=""/>
                         <Setter Property="FontWeight" Value="Bold"/>
                         <Setter Property="MaxLength" Value="1"></Setter>
+                        <Setter Property="Focusable" Value="False"></Setter>
                 </Style>
                 
                 <Style Selector="TextBox:focus /template/ Border#PART_BorderElement">
@@ -35,11 +37,40 @@
                         <Setter Property="Background" Value="Transparent"/>
                         <Setter Property="BorderBrush" Value="Transparent"/>
                 </Style>
+                
+                <!--menu item-->
+                <Style Selector="MenuItem">
+                        <Setter Property="Foreground" Value="White"></Setter>
+                        <Setter Property="FontWeight" Value="Medium"></Setter>
+                </Style>
+                
+                <Style Selector="MenuItem:pointerover">
+                        <Setter Property="Foreground" Value="White"></Setter>
+                </Style>
         </Window.Styles>
         
-        <Grid RowDefinitions="30,*,30">
-                <Menu DockPanel.Dock="Top" HorizontalAlignment="Center" Background="DarkBlue" ZIndex="2">
-                        <MenuItem Header="Nuevo" Foreground="White" FontWeight="Bold"/>
+        <Grid RowDefinitions="30,*,25" Name="MainGrid">
+                <Menu Background="DarkSlateBlue" Width="{Binding #MainGrid.Bounds.Width}">
+                        <MenuItem Header="_Nuevo" HorizontalAlignment="Left">
+                                <MenuItem Name="Facil" Click="Facil_OnClick" Header="_Fácil" InputGesture="Ctrl+F" Foreground="Black">
+                                        <MenuItem.Icon>
+                                                <Image Width="50" Height="50" Source="Assets/imagenes/facil.png"/>
+                                        </MenuItem.Icon>
+                                </MenuItem>
+                                <Separator/>
+                                <MenuItem Name="Medio" Click="Medio_OnClick" Header="_Medio" InputGesture="Ctrl+M" Foreground="Black">
+                                        <MenuItem.Icon>
+                                                <Image Width="50" Height="50" Source="Assets/imagenes/medio.png"/>
+                                        </MenuItem.Icon>
+                                </MenuItem>                                
+                                <Separator/>
+                                <MenuItem Name="Dificil" Click="Dificil_OnClick" Header="_Dificil" InputGesture="Ctrl+D" Foreground="Black">
+                                        <MenuItem.Icon>
+                                                <Image Width="50" Height="50" Source="Assets/imagenes/dificil.png"/>
+                                        </MenuItem.Icon>
+                                </MenuItem>
+                        </MenuItem>
+                        <MenuItem Name="ComprobarBtn" Header="_Comprobar" IsEnabled="False" HorizontalAlignment="Right" Click="Comprobar_OnClick"/>
                 </Menu>
                 <Grid Grid.Row="1" Name="Main" RowDefinitions="*,*,*" ColumnDefinitions="*,*,*" >
                         <Border Grid.Column="0" Grid.Row="0" BorderBrush="Black" BorderThickness="1" ZIndex="1">
@@ -322,8 +353,9 @@
                                 </Grid>
                         </Border>
                 </Grid>
-                <Menu Grid.Row="2" HorizontalAlignment="Center" Background="DarkCyan">
-                        <MenuItem Click="MenuItem_OnClick" Header="Comprobar" Foreground="White" FontWeight="Bold" ZIndex="2"/>
-                </Menu>
+                <Border Name="MessageBrd" Grid.Row="2" Background="DarkSlateBlue">
+                        <Label Name="MessageLbl" Content="SELECCIONE UNA DIFICULTAD" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                               Foreground="White" FontSize="12" FontStretch="ExtraExpanded" FontWeight="Normal"/>
+                </Border>
         </Grid>
 </Window>

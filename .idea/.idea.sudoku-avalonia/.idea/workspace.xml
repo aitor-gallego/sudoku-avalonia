@@ -8,12 +8,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bf1da74-6a8c-4fc1-878c-bbdea1716564" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.sudoku-avalonia/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sudoku-avalonia/.idea/avalonia.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.sudoku-avalonia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sudoku-avalonia/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/App.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/App.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/MainWindow.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/MainWindow.axaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/bin/Debug/net8.0/sudoku-avalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/bin/Debug/net8.0/sudoku-avalonia.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/bin/Debug/net8.0/sudoku-avalonia.exe" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/bin/Debug/net8.0/sudoku-avalonia.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/bin/Debug/net8.0/sudoku-avalonia.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/bin/Debug/net8.0/sudoku-avalonia.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/original.dll" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/original.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/original.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/original.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/original.ref.dll" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/Avalonia/original.ref.dll" afterDir="false" />
@@ -26,6 +29,8 @@
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/obj/Debug/net8.0/sudoku-avalonia.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-avalonia/sudoku-avalonia.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku-avalonia/sudoku-avalonia.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku-resuelto/1.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +59,15 @@
     &quot;accountId&quot;: &quot;1bb278c4-7c1d-4d3d-bdd7-0a77dfcf1c6c&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sudoku-avalonia/App.axaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sudoku-avalonia/MainWindow.axaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sudoku-avalonia/MainWindow.axaml.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -117,6 +131,11 @@
       <workItem from="1715235919247" duration="6990000" />
       <workItem from="1715322651922" duration="5749000" />
       <workItem from="1715328654526" duration="4173000" />
+      <workItem from="1715334931154" duration="85000" />
+      <workItem from="1715339203423" duration="1702000" />
+      <workItem from="1715581768194" duration="2682000" />
+      <workItem from="1715584502731" duration="915000" />
+      <workItem from="1715585512757" duration="5761000" />
     </task>
     <servers />
   </component>

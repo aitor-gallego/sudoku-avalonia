@@ -20,6 +20,7 @@ public partial class MainWindow : Window
                                           9,6,1,2,8,7,3,4,5,
                                           5,3,7,4,1,9,2,8,6,
                                           2,8,4,6,3,5,1,7,9];
+    
     public MainWindow()
     {
         InitializeComponent();
@@ -69,6 +70,7 @@ public partial class MainWindow : Window
             i++;
         }
     }
+    
     private void Medio_OnClick(object? sender, RoutedEventArgs e)
     {
         ComprobarBtn.IsEnabled = true;
@@ -105,6 +107,7 @@ public partial class MainWindow : Window
             i++;
         }
     }
+    
     private void Dificil_OnClick(object? sender, RoutedEventArgs e)
     {
         Reset_Sudoku();
@@ -144,32 +147,53 @@ public partial class MainWindow : Window
     //comprobar
     private void Comprobar_OnClick(object? sender, RoutedEventArgs e)
     {
-        var rec = 0;
-        foreach (var tBox in Main.GetVisualDescendants().OfType<TextBox>())
+        var sudokuCorrecto = true;
+        var sudokuCompleto = true;
+        var sudokuIncorrecto = false;
+
+        for (int i = 0; i < _sudoku.Count; i++)
         {
-            if (tBox.Text != _sudoku[rec].ToString() && tBox.Text != "")
+            var tBox = Main.GetVisualDescendants().OfType<TextBox>().ElementAt(i);
+            var valorSudoku = _sudoku[i];
+
+            if (tBox.Text != valorSudoku.ToString() && tBox.Text != "")
             {
-                MessageBrd.Background = Brushes.DarkRed;
-                MessageLbl.Content = "SUDOKU INCORRECTO";
+                sudokuCorrecto = false;
+                sudokuIncorrecto = true;
+                sudokuCompleto = false;
                 tBox.Foreground = Brushes.DarkRed;
-                return;
             }
-            if (tBox.Text == "")
+            else if (tBox.Text == "")
             {
-                MessageBrd.Background = Brushes.DarkMagenta;
-                MessageLbl.Content = "SUDOKU INCOMPLETO";
-                return;  
+                sudokuCorrecto = false;
+                sudokuCompleto = false;
+                tBox.Foreground = Brushes.Black;
             }
-            if (!tBox.IsReadOnly)
+            else if (!tBox.IsReadOnly)
             {
                 tBox.Foreground = Brushes.Green;
                 tBox.Focusable = false;
                 tBox.IsReadOnly = true;
             }
-            rec++;
         }
-        MessageLbl.Content = "SUDOKU RESUELTO"; 
+
+        if (sudokuIncorrecto)
+        {
+            MessageBrd.Background = Brushes.DarkRed;
+            MessageLbl.Content = "SUDOKU INCORRECTO";
+        }
+        else if (!sudokuCompleto)
+        {
+            MessageBrd.Background = Brushes.DarkMagenta;
+            MessageLbl.Content = "SUDOKU INCOMPLETO";
+        }
+        else if (sudokuCorrecto)
+        {
+            MessageBrd.Background = Brushes.DarkGreen;
+            MessageLbl.Content = "SUDOKU CORRECTO";
+        }
     }
+
     
     //reset sudoku
     private void Reset_Sudoku()

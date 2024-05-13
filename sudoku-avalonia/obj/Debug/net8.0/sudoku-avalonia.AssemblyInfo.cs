@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sudoku-avalonia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+525d2366d3303d05bddd2c2ea059b5f2d639bb27")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b0e2379249f985a0700017dcc05240b4a2cdbf2")]
 [assembly: System.Reflection.AssemblyProductAttribute("sudoku-avalonia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sudoku-avalonia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
